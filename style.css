@@ -82,3 +82,29 @@ nav {
     margin: auto;
     padding: 20px;
 }
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 5px;
+    height: 350px;
+    gap: 20px;
+}
+
+.project {
+    display: flex;
+    width: 200px;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border: 2px solid rgb(155, 155, 155);
+    padding: 20px;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.project-description {
+    font-size: 10px;
+}
