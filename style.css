@@ -106,10 +106,30 @@ nav {
 
 .project-description {
     font-size: 14px;
+    flex: 2 1 0;
     padding: 5px;
 }
 
 .project-image {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     height: 80px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#text {
+    width: 350px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+#send {
+    border: 0px;
+    font-size: 15px;
 }
