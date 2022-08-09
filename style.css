@@ -36,15 +36,14 @@ div, nav {
 }
 
 nav {
-    justify-content: space-between;
     padding: 20px;
     align-items: center;
     margin-bottom: 10px;
+    gap: 16px;
 }
 
-.nav-links {
-    justify-content: flex-end;
-    gap: 16px;
+.name {
+    margin-right: auto;
 }
 
 .work-in-progress {
