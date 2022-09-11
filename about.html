@@ -4,32 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About me</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-img {
+            object-fit: cover;
+            object-position: center;
+            height: 150px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .about {
+            display: flex;
+            padding: var(--default-padding);
+            gap: max(40px, 10%);
+        }
+
+        .about-description {
+            width: clamp(45ch, 60%, 75ch);
+        }
+
+        .about-nav {
+            margin-right: auto;
+        }
+
+        .about-nav ul {
+            padding-left: 0;
+        }
+
+        .about-nav li {
+            list-style: none;
+            line-height: 2.5;
+            border-left: 1px solid #6d655a69;
+            padding-left: 20px;
+        }
+
+        .about-nav li:hover {
+            border-left: 1px solid var(--main-text-color);
+        }
+
+        .about h2:nth-child(n + 2) {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <div class="name">David Lin</div>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About</a> |
-        <a href="projects.html">Projects</a>
+        <div class="nav-bar">
+            <div class="name">David Lin</div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li>|</li>
+                    <li><a href="about.html">About</a></li>
+                    <li>|</li>
+                    <li><a href="projects.html">Projects</a> </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
-    <h2>Education</h2>
-    <img src="ucsd.jpeg" height="300px" id="ucsd">
-    <div class="edu">
-        <div class="program">UCSD - M.S. Chemical Engineering</div>
-        <div class="year">2020-2021</div>
+    <div class="nav-border"></div>
+    <img src="snowboard.jpg" alt="snowboarding" class="hero-img">
+    <h1>About me</h1>
+    <div class="about">
+        <div class="about-description">
+            <h2>Education</h2>
+            <p>I studied chemical engineering at UCSD starting in 2016. I received my BS in 2020 and my MS a year later in 2021.</p>
+            <h2>Work Experience</h2>
+            <p>
+                After graduating from UCSD, I accepted a job as a Process Development Engineer at Illumina in San Diego.
+                I support our flow cell manufacturing process. 
+            </p>
+            <h2>Interests</h2>
+            <h3>Soccer</h3>
+            <p>
+                I've been playing soccer since 2013, my freshman year in high school. In college I played intramurals.
+                Currently I play pick up over the weekends.
+            </p>
+            <p>My favorite team is FC Barcelona, but I enjoy watching the Premier League the most.</p>
+            <h3>Snowboarding</h3>
+            <p>I used to ski but switched to snowboarding in 2012. It's a dream of mine to snowboard outside of California, like in Aspen or Europe.</p>
+            <h3>Gaming</h3>
+            <p>In my free time, I enjoy playing games like Rocket League and CSGO.</p>
+        
+        </div>
+        <div class="about-nav">
+            <ul>
+                <li>Education</li>
+                <li>Work Experience</li>
+                <li>Interests</li>
+            </ul>
+        </div>
     </div>
-    <div class="edu">
-        <div class="program">UCSD - B.S. Chemical Engineering</div>
-        <div class="year">2016-2020</div>
-    </div>
-
-    <h2>Interests</h2>
-    <ul>
-        <li>Soccer</li>
-        <li>Snowboarding</li>
-    </ul>
 </body>
 </html>
